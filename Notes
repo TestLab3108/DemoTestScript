@@ -1,0 +1,26 @@
+DDT Framework
+
+1.What is FileInputStream 
+Ans:FileInputStream jis=new FileInputStream(File path);
+    FileInputStream in Java is a class belonging to the java.io package that provides an input stream for reading bytes from a file.
+    The class is commonly used to create a connection between a Java program and a file on the local file system.
+    We can occur a exception of FileNotFoundException.
+    FileInputStream jis=new FileInputStream(File path)
+    
+ 2.What is XSSF
+ Ans: XSSFWorkbook workbook = new XSSFWorkbook(fis);
+      This is a class from Apache POI, a library for working with Microsoft Office documents in Java.
+      Specifically, XSSFWorkbook is used for handling Excel (.xlsx) files.
+      It represents the entire Excel workbook.
+      workbook: This is the name of the variable that will reference the newly created XSSFWorkbook object.
+      = new XSSFWorkbook(fis): This part creates a new instance of the XSSFWorkbook class.
+      The constructor XSSFWorkbook(fis) takes a parameter, which is a FileInputStream (fis). 
+      This FileInputStream is responsible for providing the raw bytes from the Excel file.
+    
+ 3. What is XSSF Sheet?
+ Ans:  XSSFSheet Sheet = workbook.getSheet("Sheet1")   
+       XSSFSheet: This is the class representing an Excel sheet in the .xlsx format.
+       sheet: This is the name of the variable that will reference the specific XSSFSheet object.
+       = workbook.getSheet("Sheet1"): This part is retrieving a specific sheet from the workbook.
+       The method getSheet("Sheet1") is used to get a reference to the sheet named "Sheet1" from the XSSFWorkbook object (workbook).
+    
